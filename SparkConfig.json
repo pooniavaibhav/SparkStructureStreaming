@@ -1,0 +1,19 @@
+{
+   "SparkConfig":[
+      {
+         "window_size":"5 minutes",
+         "overlap_window_size":"5 minutes",
+         "Outputmode":"Complete",
+         "watermark":"10 minutes"
+}
+   
+],
+	"Operators":[
+	{
+	 "column": "transaction_amt",
+	 "operation": ">",
+	 "filter_value": "200000",
+	 "trans_allowed": "1" 
+}
+]
+}
